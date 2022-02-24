@@ -11,7 +11,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             LogicalProgramList list=new LogicalProgramList();
-            list.PerfectNumber();
+            list.PrimeNumber();
             Console.ReadKey();
         }
     }

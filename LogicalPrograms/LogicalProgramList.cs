@@ -43,7 +43,6 @@ namespace LogicalPrograms
                 {
                     sum = sum + i;
                 }
-
             }
             if (sum == n)
             {
@@ -58,6 +57,30 @@ namespace LogicalPrograms
 
         }
 
+        //creating method for Prime Number. 
+        //Prime number means the number is divided by 1 or that number itself ex:3,7,11...
+        public void PrimeNumber()
+        {
+            int n, m = 0, flag = 0;
+            Console.WriteLine();
+            Console.WriteLine("******** Prime Number ********");
+            Console.Write("Please enter the number:");
+            n = int.Parse(Console.ReadLine());
+            m = n / 2;
+            //we initialize i=2 because ever number is divisible by 1
+            for (int i = 2; i <= m; i++)
+            {
+                if (n % i == 0)
+                {
+                    Console.Write("The entered number is not a Prime number.");
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0)
+                Console.Write("The entered number is a Prime number. ");
+        }
     }
+    
 }
 
