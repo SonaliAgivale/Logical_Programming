@@ -11,7 +11,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             //calling method by class name because it is static method
-            LogicalProgramList.reverseNo();
+            LogicalProgramList.GetCoupons();
             Console.ReadKey();
         }
     }

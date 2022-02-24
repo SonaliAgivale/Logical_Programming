@@ -98,6 +98,27 @@ namespace LogicalPrograms
             Console.WriteLine("Reverse Number is: {0}", Reverse);
             Console.ReadLine();
         }
+
+        //coupan number  
+        public static void GetCoupons()
+        {
+            List<int> coupons = new List<int>();
+            Random rand = new Random();
+            int randomInput;
+            Console.WriteLine();
+            Console.WriteLine("******** Coupons Numbers ********");
+            Console.Write("Please enter the number:");
+            int n = int.Parse(Console.ReadLine());
+            while (coupons.Count < n)
+            {
+                randomInput = rand.Next(1, n + 1);
+                if (coupons.Contains(randomInput) is false)
+                    coupons.Add(randomInput);
+            }
+            Console.WriteLine("Generated Coupons are:");
+            foreach (int coupon in coupons)
+            Console.Write(coupon + " ");
+        }
     }
     
 }
