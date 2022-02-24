@@ -10,8 +10,8 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            LogicalProgramList list=new LogicalProgramList();
-            list.PrimeNumber();
+            //calling method by class name because it is static method
+            LogicalProgramList.reverseNo();
             Console.ReadKey();
         }
     }

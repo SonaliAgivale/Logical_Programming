@@ -80,6 +80,24 @@ namespace LogicalPrograms
             if (flag == 0)
                 Console.Write("The entered number is a Prime number. ");
         }
+
+        //Creating method Reverse Number as static so we can called it using class name no need create object
+        public static void reverseNo()
+        {
+            Console.WriteLine();
+            Console.WriteLine("********* Reverse Number *********");
+            Console.Write("Enter the Number:");
+            int number = int.Parse(Console.ReadLine());
+            int Reverse = 0;
+            while (number > 0)
+            {
+                int rem = number % 10;
+                Reverse = (Reverse * 10) + rem;
+                number = number / 10;
+            }
+            Console.WriteLine("Reverse Number is: {0}", Reverse);
+            Console.ReadLine();
+        }
     }
     
 }
